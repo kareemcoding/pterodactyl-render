@@ -20,7 +20,7 @@ services:
       mountPath: /var/lib/mysql
       sizeGB: 10
     envVars:
-      - fromGroup: mysql
+      - fromGroup: pterodactyl-settings
 
 envVarGroups:
   - name: pterodactyl-settings
