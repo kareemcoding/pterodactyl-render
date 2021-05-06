@@ -1,6 +1,6 @@
 services:
   - type: pserv
-    name: redis
+    name: pterodactyl-redis
     env: docker
     dockerfilePath: ./redis/Dockerfile
     dockerContext: /redis
@@ -10,7 +10,7 @@ services:
       sizeGB: 10
 
   - type: pserv
-    name: mysql
+    name: pterodactyl-mysql
     plan: standard
     env: docker
     dockerfilePath: ./mysql/Dockerfile
